@@ -1,5 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
+import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
   projectId: "radiant-trilogy-kq6d2",
@@ -11,4 +12,5 @@ const firebaseConfig = {
 };
 
 export const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app, "ai-studio-gcmpta-d5603f20-a597-49c3-bb94-e64d71a92d5d");
+export const db = getFirestore(app, "ai-studio-f9757dc9-2239-4ed0-9eca-8b9c89894659");
+export const auth = getAuth(app);
